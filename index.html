@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/LNSF_Avatar.png">
+    
+    <!-- v1.3.0 FINAL - Thematic Refinement & Polish -->
+    <style>
+      html{overflow-x:hidden;overflow-y:scroll}
+      body{visibility:hidden}
+      body.loaded{visibility:visible}
+    </style>
+    <title>Late Night Space Flight with MalForTheWin — Live Space Science on Twitch</title>
+    <meta name="description" content="A live late night talk show about real astronomy and astrophysics, hosted inside a 1:1 scale recreation of the Milky Way. Live on Twitch.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Late Night Space Flight with MalForTheWin">
+    <meta property="og:description" content="Live space science. Late night format. Virtual galaxy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://latenightspaceflight.tv">
+    <meta property="og:image" content="https://latenightspaceflight.tv/assets/og-image.png">
+    <meta property="og:image:alt" content="Late Night Space Flight - A live astronomy talk show in a virtual galaxy">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Late Night Space Flight">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@malforthewin">
+    <meta name="twitter:creator" content="@malforthewin">
+    <meta name="twitter:title" content="Late Night Space Flight with MalForTheWin">
+    <meta name="twitter:description" content="Live space science. Late night format. Virtual galaxy.">
+    <meta name="twitter:image" content="https://latenightspaceflight.tv/assets/twitter-card.png">
+    <meta name="twitter:image:alt" content="Late Night Space Flight - A live astronomy talk show in a virtual galaxy">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TVSeries",
+          "@id": "https://latenightspaceflight.tv/#tvseries",
+          "name": "Late Night Space Flight",
+          "alternateName": "LNSF",
+          "description": "A live late night talk show about real astronomy and astrophysics, hosted inside a 1:1 scale recreation of the Milky Way. Every flight, a real destination — black holes, neutron stars, stellar nurseries.",
+          "genre": ["Science", "Educational", "Talk Show"],
+          "inLanguage": "en-US",
+          "url": "https://latenightspaceflight.tv",
+          "sameAs": [
+            "https://twitch.tv/malforthewin",
+            "https://youtube.com/@malforthewin",
+            "https://twitter.com/malforthewin"
+          ],
+          "productionCompany": {
+            "@type": "Organization",
+            "name": "MalForTheWin Productions"
+          },
+          "creator": {
+            "@type": "Person",
+            "@id": "https://latenightspaceflight.tv/#malforthewin",
+            "name": "MalForTheWin",
+            "url": "https://twitch.tv/malforthewin",
+            "sameAs": [
+              "https://youtube.com/@malforthewin",
+              "https://twitter.com/malforthewin"
+            ]
+          },
+          "actor": {
+            "@type": "Person",
+            "@id": "https://latenightspaceflight.tv/#malforthewin"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Astronomy"
+            },
+            {
+              "@type": "Thing",
+              "name": "Astrophysics"
+            },
+            {
+              "@type": "Thing",
+              "name": "Space Science"
+            },
+            {
+              "@type": "VideoGame",
+              "name": "Elite Dangerous",
+              "url": "https://www.elitedangerous.com/"
+            }
+          ],
+          "numberOfSeasons": 1,
+          "startDate": "2026",
+          "broadcastTimezone": "America/New_York"
+        },
+        {
+          "@type": "BroadcastService",
+          "@id": "https://latenightspaceflight.tv/#broadcast",
+          "name": "Late Night Space Flight on Twitch",
+          "broadcastDisplayName": "Late Night Space Flight",
+          "broadcaster": {
+            "@type": "Organization",
+            "name": "Twitch",
+            "url": "https://twitch.tv"
+          },
+          "broadcastFrequency": "Weekly, Tuesday and Thursday at 9:00 PM ET",
+          "url": "https://twitch.tv/malforthewin",
+          "description": "Live broadcasts every Tuesday and Thursday at 21:00 Eastern Time",
+          "potentialAction": {
+            "@type": "WatchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://twitch.tv/malforthewin",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform",
+                "http://schema.org/IOSPlatform",
+                "http://schema.org/AndroidPlatform"
+              ]
+            }
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "https://latenightspaceflight.tv/#video",
+          "name": "Late Night Space Flight Episodes",
+          "description": "Live space science show exploring real astronomical objects in a virtual 1:1 scale Milky Way galaxy",
+          "uploadDate": "2026-01-01",
+          "thumbnailUrl": "https://latenightspaceflight.tv/assets/MalFTW_lnsfTitleCard.png",
+          "contentUrl": "https://twitch.tv/malforthewin",
+          "embedUrl": "https://twitch.tv/malforthewin",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MalForTheWin",
+            "url": "https://twitch.tv/malforthewin"
+          },
+          "potentialAction": {
+            "@type": "WatchAction",
+            "target": "https://twitch.tv/malforthewin"
+          }
+        },
+        {
+          "@type": "PodcastSeries",
+          "@id": "https://latenightspaceflight.tv/#podcast",
+          "name": "Late Night Space Flight Podcast",
+          "description": "Every episode of Late Night Space Flight available on-demand. The science, the conversation, and the occasional strong opinion about white dwarfs — no ship required.",
+          "url": "https://latenightspaceflight.tv",
+          "author": {
+            "@type": "Person",
+            "@id": "https://latenightspaceflight.tv/#malforthewin"
+          },
+          "genre": ["Science", "Educational", "Technology"],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://latenightspaceflight.tv/#website",
+          "url": "https://latenightspaceflight.tv",
+          "name": "Late Night Space Flight",
+          "description": "A live late night talk show about real astronomy, hosted inside a 1:1 scale recreation of the Milky Way",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MalForTheWin Productions"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://latenightspaceflight.tv/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://latenightspaceflight.tv/#malforthewin",
+          "name": "MalForTheWin",
+          "alternateName": "Mal",
+          "description": "Host of Late Night Space Flight, combining late night warmth with scientific rigor to explore real astronomy live in a virtual galaxy",
+          "url": "https://twitch.tv/malforthewin",
+          "sameAs": [
+            "https://youtube.com/@malforthewin",
+            "https://twitter.com/malforthewin"
+          ],
+          "jobTitle": "Host",
+          "knowsAbout": ["Astronomy", "Astrophysics", "Space Science", "Elite Dangerous"]
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Fonts with optimized loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Exo+2:wght@400;600&family=Inter:wght@400;500&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<!-- NAV -->
+<header id="nav" role="banner">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Late Night Space Flight — home">
+      <img src="assets/LNSF_Avatar.png" alt="MalForTheWin">
+      <span class="nav-logo-text">MalForTheWin</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#show">Show</a></li>
+      <li><a href="#crew">Crew</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#stats">Stats</a></li>
+    </ul>
+    <a href="https://twitch.tv/malforthewin" target="_blank" rel="noopener noreferrer" class="nav-cta desk btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>Watch Live</a>
+    <div class="nav-ham" id="ham" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mob">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="mob" aria-label="Mobile navigation">
+    <a href="#show" onclick="closeMob()">Show</a>
+    <a href="#destinations" onclick="closeMob()">Destinations</a>
+    <a href="#community" onclick="closeMob()">Community</a>
+    <a href="#stats" onclick="closeMob()">Stats</a>
+    <a href="https://twitch.tv/malforthewin" target="_blank" rel="noopener noreferrer" class="nav-cta">Watch Live</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 1 — HERO
+════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Introduction">
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>
+        <img src="assets/LNSF_TitleCard.png" alt="The Late Night Space Flight Show with MalForTheWin" class="title-card-img">
+      </h1>
+      <p class="hero-desc">Real astronomy. Live in the galaxy. Every flight, a real destination — no slides, no stock footage, just 400 billion star systems and a dog with opinions.</p>
+      <div class="hero-cta-row">
+        <a href="https://twitch.tv/malforthewin" target="_blank" rel="noopener noreferrer" class="btn-primary btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>Watch Live</a>
+        <a href="https://youtube.com/@malforthewin" target="_blank" rel="noopener noreferrer" class="btn-primary btn-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>Watch VODs</a>
+        <a href="#show" class="hero-hint">&darr; See what the show is about</a>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-card">
+        <div class="hero-card-label">The Concept</div>
+        <div class="hero-card-val">Craig Ferguson meets Neil deGrasse Tyson</div>
+        <div class="hero-card-desc">Late night warmth. Scientific rigour. A live galaxy.</div>
+      </div>
+      <a href="https://www.elitedangerous.com/" target="_blank" rel="noopener noreferrer" class="hero-card hero-card--link">
+        <div class="hero-card-label">The Vehicle</div>
+        <div class="hero-card-val">Elite Dangerous</div>
+        <div class="hero-card-desc">1:1 scale Milky Way. Built on real stellar catalogue data.</div>
+      </a>
+      <div class="hero-card">
+        <div class="hero-card-label">The Subject</div>
+        <div class="hero-card-val">Real Astronomy</div>
+        <div class="hero-card-desc">Black holes. Neutron stars. The galactic core. No slides.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 2 — THE SHOW (absorbs The Galaxy)
+════════════════════════════════════════════════ -->
+<section id="show" class="section" aria-labelledby="show-title">
+  <div class="container">
+
+    <div class="reveal">
+      <div class="sec-label">The Show</div>
+      <h2 class="sec-title" id="show-title">This Is a Show, Not a Stream</h2>
+      <p class="sec-sub">Late night structure. Live science. Leo in the producer's chair.</p>
+    </div>
+
+    <div class="reveal sec-body">
+      <p>Most space content gives you slides, stock footage, and a voiceover. This is something different.</p>
+      <p><em>Late Night Space Flight</em> is a live Twitch show about real astronomy&mdash;black holes, neutron stars, stellar nurseries, the galactic core. Each episode, we choose a real astronomical object because it&rsquo;s scientifically interesting. Then we fly there. The visuals on screen are the game&rsquo;s rendering of that object. The conversation is about the real science. The game is the vehicle. The science is the destination.</p>
+    </div>
+
+    <div class="show-grid">
+
+      <!-- Row 1 left: The Vehicle -->
+      <div class="show-left">
+        <div class="reveal show-panel">
+          <div class="show-panel-title">The Vehicle</div>
+          <p class="show-ed-body"><a href="https://www.elitedangerous.com/" target="_blank" rel="noopener noreferrer" class="text-link">Elite Dangerous</a> is a massive, open-world space flight simulation set in a 1:1 scale, realistic recreation of the Milky Way &mdash; 400 billion star systems, no set path, and a player-driven persistent universe. Start with a small ship and trade, fight, mine, or go full pirate.</p>
+          <p class="show-ed-body" style="margin-top:1rem">On Late Night Space Flight, we use it for one thing: exploration. We fly to real astronomical objects, at their correct galactic coordinates, and talk about the science.</p>
+          <p class="show-ed-body" style="margin-top:1rem"><strong>And it only happens on Late Night Space Flight.</strong></p>
+        </div>
+      </div>
+
+      <!-- Row 1 right: The Elements panel -->
+      <div class="show-right">
+        <div class="reveal show-panel">
+          <div class="show-panel-title">The Elements</div>
+          <div class="show-row first-row">
+            <div class="show-row-icon">&#9658;</div>
+            <div>
+              <span class="show-row-label">The Audience</span>
+              <span class="show-row-desc">The Constellation &mdash; chat is the studio audience. They heckle. They have Ripley fetch things. They hold strong opinions about white dwarfs.</span>
+            </div>
+          </div>
+          <div class="show-row">
+            <div class="show-row-icon">&#9658;</div>
+            <div>
+              <span class="show-row-label">The Subject</span>
+              <span class="show-row-desc">Real astronomy. Real astrophysics. Real cosmology. Real talk about IRL space missions. No slides, no stock footage &mdash; live and in real time (relativity notwithstanding).</span>
+            </div>
+          </div>
+          <div class="show-row">
+            <div class="show-row-icon">&#9658;</div>
+            <div>
+              <span class="show-row-label">The Format</span>
+              <span class="show-row-desc">Late night structure: cold open, community segment, science conversation, main flight, sign-off. Live on Twitch.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /show-grid -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3 — MEET THE CREW
+════════════════════════════════════════════════ -->
+<section id="crew" class="section crew-section" aria-labelledby="crew-title">
+  <div class="container">
+    
+    <div class="reveal">
+      <div class="sec-label">The Crew</div>
+      <h2 class="sec-title" id="crew-title">Who's Behind Late Night Space Flight</h2>
+      <p class="sec-sub">Every show needs a crew.</p>
+    </div>
+    
+    <div class="reveal sec-body">
+      <p>You know the what. You know the where. You've seen the starfield and you've heard about the black holes. But who's actually running this thing? Good question. Meet the crew: one host with late night energy, one producer who's been here since day one, and one very good dog who has never explained where she got that Thargoid artifact. We don't screen our calls and we don't rehearse our banter. What you see is what we've got. And honestly? We're just as curious about where this is going as you are.</p>
+    </div>
+    
+    <!-- Three-Column Grid -->
+    <div class="crew-grid">
+      
+      <!-- Mal Card -->
+      <div class="crew-card crew-card--mal reveal">
+        <div class="crew-card-eyebrow">The Host</div>
+        <h3 class="crew-card-title">MalForTheWin</h3>
+        <div class="crew-card-photo" aria-hidden="true">
+          <div class="crew-card-photo-placeholder"></div>
+        </div>
+        <p class="crew-card-bio">Late night host energy, not streamer energy. Observational humor, genuine scientific curiosity, warm with chat, and occasionally cheeky.</p>
+        <div class="crew-card-detail">Twitch Partner</div>
+      </div>
+      
+      <!-- Leo Card -->
+      <div class="crew-card crew-card--leo reveal">
+        <div class="crew-card-eyebrow">The Producer</div>
+        <h3 class="crew-card-title">Leo</h3>
+        <div class="crew-card-photo" aria-hidden="true">
+          <div class="crew-card-photo-placeholder"></div>
+        </div>
+        <p class="crew-card-bio">A memorial to Mal's last service dog (Leo, 2007–2021), he's baked into every emote. If Mal is flying, he's in the seat and on duty. Someone has to keep an eye on the mission.</p>
+        <div class="crew-card-detail">All flights, all episodes</div>
+      </div>
+      
+      <!-- Ripley Card -->
+      <div class="crew-card crew-card--ripley reveal">
+        <div class="crew-card-eyebrow">The Intern</div>
+        <h3 class="crew-card-title">Ripley</h3>
+        <div class="crew-card-photo" aria-hidden="true">
+          <div class="crew-card-photo-placeholder"></div>
+        </div>
+        <p class="crew-card-bio">Belgian Malinois, service dog in training, doggo-cam regular. She runs !fetch. She once brought back a Thargoid artifact and has declined to explain where she found it. When she wanders into frame, it's a moment.</p>
+        <div class="crew-card-detail">Doggo-cam regular</div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     PODCAST BANNER
+════════════════════════════════════════════════ -->
+<div class="podcast-banner">
+  <div class="podcast-banner-bg" aria-hidden="true"></div>
+  <div class="podcast-inner">
+    <div class="podcast-copy">
+      <div class="podcast-eyebrow">Also Available As</div>
+      <p class="podcast-headline">Yes, it&rsquo;s also a podcast.</p>
+      <p class="podcast-sub">Every episode, on your schedule. The science, the conversation, and the occasional strong opinion about white dwarfs &mdash; no ship required.</p>
+    </div>
+    <div class="podcast-cta">
+      <p class="podcast-cta-label">Listen on your favourite platform</p>
+      <div class="podcast-btns">
+        <a href="#" class="podcast-btn" aria-label="Listen on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Spotify
+        </a>
+        <a href="#" class="podcast-btn" aria-label="Listen on Apple Podcasts">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.102c4.347 0 7.898 3.551 7.898 7.898 0 4.349-3.551 7.9-7.898 7.9S4.102 16.349 4.102 12c0-4.347 3.55-7.898 7.898-7.898zM12 6.14a5.857 5.857 0 0 0-5.86 5.86A5.857 5.857 0 0 0 12 17.86a5.857 5.857 0 0 0 5.86-5.86A5.857 5.857 0 0 0 12 6.14zm0 2.044c2.103 0 3.816 1.713 3.816 3.816S14.103 15.816 12 15.816 8.184 14.103 8.184 12 9.897 8.184 12 8.184zm-.007 1.37c-.815 0-1.478.663-1.478 1.478 0 .588.344 1.095.845 1.335l-.59 3.126h2.448l-.59-3.126c.501-.24.845-.747.845-1.335 0-.815-.663-1.478-1.48-1.478z"/></svg>
+          Apple Podcasts
+        </a>
+        <a href="#" class="podcast-btn" aria-label="Listen on Amazon Music">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.699-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.076-1.052-.872-1.238-1.276-1.814-2.106-1.733 1.767-2.96 2.295-5.209 2.295-2.66 0-4.731-1.642-4.731-4.927 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095V6.41c0-.753.06-1.642-.383-2.294-.385-.581-1.124-.822-1.776-.822-1.206 0-2.277.618-2.54 1.897-.054.285-.261.566-.549.58l-3.064-.331c-.259-.058-.547-.266-.472-.66C5.57 2.36 8.533 1.5 11.19 1.5c1.358 0 3.132.361 4.204 1.389 1.358 1.267 1.228 2.958 1.228 4.798v4.348c0 1.308.542 1.882 1.053 2.587.179.252.219.553-.009.742l-2.522 2.431zm3.559 1.722c-.574.417-1.408.63-2.123.63-.976 0-1.559-.302-2.183-.742.306-.319.51-.716.51-1.12 0-.397-.2-.787-.51-1.083.714-.434 1.52-.695 2.41-.695.66 0 1.349.182 1.895.589.547.406.547 1.071 0 1.421z"/></svg>
+          Amazon Music
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 3 — DESTINATIONS (visual-led)
+════════════════════════════════════════════════ -->
+<section id="destinations" class="section" aria-labelledby="dest-title">
+  <div class="container">
+
+    <div class="reveal">
+      <div class="sec-label">The Destinations</div>
+      <h2 class="sec-title" id="dest-title">The Universe Has Good Material</h2>
+      <p class="sec-sub">Real science, real objects, real coordinates.</p>
+    </div>
+
+    <div class="reveal sec-body">
+      <p>Every flight has a destination chosen for scientific interest, not game progression. Black holes. Neutron stars. The galactic core. Stellar nurseries where new stars are being born. We fly there, we look at it, we talk about the science. No slides, no stock footage—just the real object rendered live.</p>
+    </div>
+
+    <div class="dest-stat-grid reveal">
+      <div class="dest-stat-card"><span class="dest-stat-num" data-count="400" data-sfx=" Billion">400 Billion</span><div class="dest-stat-lbl">Star Systems</div></div>
+      <div class="dest-stat-card"><span class="dest-stat-num">1:1</span><div class="dest-stat-lbl">Scale &mdash; Milky Way</div></div>
+      <div class="dest-stat-card"><span class="dest-stat-num" data-count="100000" data-sfx=" LY">100,000 LY</span><div class="dest-stat-lbl">Galaxy Diameter</div></div>
+      <div class="dest-stat-card"><span class="dest-stat-num" data-count="2000" data-sfx="+">2,000+</span><div class="dest-stat-lbl">Real Catalogue Stars</div></div>
+    </div>
+
+    <div class="dest-sci-grid reveal">
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#9673;</div>
+        <div class="dest-sci-name">Black Holes</div>
+        <div class="dest-sci-hook">Where space-time folds back on itself. From stellar-mass remnants to the four-million-solar-mass anchor of the galaxy.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#8859;</div>
+        <div class="dest-sci-name">Neutron Stars &amp; Pulsars</div>
+        <div class="dest-sci-hook">The densest stable objects in the universe. A teaspoon weighs approximately a billion tonnes.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#10022;</div>
+        <div class="dest-sci-name">Stellar Nurseries</div>
+        <div class="dest-sci-hook">Molecular clouds collapse, heat, and ignite. Factories where stars are born&mdash;watching it live is a privilege.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#8853;</div>
+        <div class="dest-sci-name">Supernovae &amp; Remnants</div>
+        <div class="dest-sci-hook">The deaths of massive stars&mdash;and the births of everything heavier than iron in the periodic table.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#8857;</div>
+        <div class="dest-sci-name">The Galactic Core</div>
+        <div class="dest-sci-hook">Extreme stellar density, ancient star populations, and Sagittarius A* at the centre of everything.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#8855;</div>
+        <div class="dest-sci-name">Binary Systems</div>
+        <div class="dest-sci-hook">Gravitational partnerships&mdash;from contact binaries to exotic pairs where one member accretes from the other.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#9733;</div>
+        <div class="dest-sci-name">Wolf-Rayet Stars</div>
+        <div class="dest-sci-hook">Stars so massive they shed their outer layers in stellar winds. The universe&rsquo;s most dramatic acts before destruction.</div>
+      </div>
+      <div class="dest-sci-card">
+        <div class="dest-sci-icon">&#10040;</div>
+        <div class="dest-sci-name">Nebulae</div>
+        <div class="dest-sci-hook">Gas and dust: aftermath of stellar death, cradle of stellar birth, and some of the most spectacular phenomena in the sky.</div>
+      </div>
+    </div>
+
+    <!-- Sample destination -->
+    <div class="dest-card reveal">
+      <div class="dest-inner">
+        <div class="dest-copy">
+          <div class="dest-class">Sample Destination</div>
+          <h3 class="dest-name">Sagittarius A*</h3>
+          <div class="dest-type">Supermassive Black Hole</div>
+          <p class="dest-sci">Sagittarius&thinsp;A* sits at the centre of the Milky Way, 26,000 light-years from Earth, with a mass of approximately 4 million solar masses. Its event horizon spans roughly 44 million kilometres. In 2022, the Event Horizon Telescope collaboration released the first direct image of the object.</p>
+          <p class="dest-sci">On this show, we flew there instead.</p>
+          <div class="dest-flight">In-game flight time from Pathamon: ~137 jumps</div>
+        </div>
+        <div class="dest-visual" aria-hidden="true">
+          <img src="assets/LNSF_screenshot_sagA.jpg" alt="In-game view of Sagittarius A* in Elite Dangerous" class="dest-screenshot">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 4 — COMMUNITY
+════════════════════════════════════════════════ -->
+<section id="community" class="section" aria-labelledby="community-title">
+  <div class="container comm-inner">
+
+    <div class="reveal">
+      <div class="sec-label">The Community</div>
+      <h2 class="sec-title" id="community-title">The Constellation</h2>
+      <p class="sec-sub">Chat is the studio audience, and every member is a point of light.</p>
+    </div>
+
+    <div class="reveal sec-body">
+      <p>Late Night Space Flight doesn't have viewers. It has The Constellation—a community of regulars who show up, participate, and shape what the show becomes. They heckle. They ask questions. They have Ripley fetch things. They hold strong opinions about white dwarfs. This isn't parasocial. This is a nightly gathering of people who care about the same things.</p>
+    </div>
+
+    <div class="comm-emote-gallery reveal" id="comm-emote-gallery" aria-label="Leo emotes">
+      <div class="comm-emote-thumb" data-name="malftwHype"><img src="assets/emotes/MalFTW_emoteHype.png" alt="malftwHype" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwFetch"><img src="assets/emotes/MalFTW_emoteFetch.png" alt="malftwFetch" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwCozy"><img src="assets/emotes/MalFTW_emoteCozy.png" alt="malftwCozy" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwHug"><img src="assets/emotes/MalFTW_emoteHug.png" alt="malftwHug" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwSTCmd"><img src="assets/emotes/MalFTW_emoteSTCmd.png" alt="malftwSTCmd" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwLurk"><img src="assets/emotes/MalFTW_emoteLurk.png" alt="malftwLurk" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwO7"><img src="assets/emotes/MalFTW_emoteO7.png" alt="malftwO7" width="80" height="80" loading="lazy"></div>
+      <div class="comm-emote-thumb" data-name="malftwGasm"><img src="assets/emotes/MalFTW_emoteGasm.png" alt="malftwGasm" width="80" height="80" loading="lazy"></div>
+    </div>
+    <p class="comm-emote-caption reveal">40 custom emotes, available to all subscribers.<br>Every one is Leo &mdash; the producer, the permanent co-presence, the face of the show.</p>
+
+    <div class="reveal">
+      <div class="comm-fetch-label">!FETCH &mdash; What Ripley might bring back</div>
+      <div class="comm-fetch-grid">
+        <div class="comm-fetch-card"><div class="comm-fetch-item">A Thargoid artifact</div><div class="comm-fetch-note">(Probably fine. Definitely smells weird.)</div></div>
+        <div class="comm-fetch-card"><div class="comm-fetch-item">A sonic screwdriver</div><div class="comm-fetch-note">(Ripley has collected seventeen. No explanation given.)</div></div>
+        <div class="comm-fetch-card"><div class="comm-fetch-item">A copy of Cosmos</div><div class="comm-fetch-note">(Vol. I. Pages flagged. Ripley declines to say which ones.)</div></div>
+        <div class="comm-fetch-card"><div class="comm-fetch-item">A Voyager golden record</div><div class="comm-fetch-note">(She found it. She&rsquo;s not giving it back.)</div></div>
+        <div class="comm-fetch-card"><div class="comm-fetch-item">Tiramisu</div><div class="comm-fetch-note">(For reasons Ripley declines to elaborate on, there is always tiramisu.)</div></div>
+        <div class="comm-fetch-card"><div class="comm-fetch-item">The Hitchhiker&rsquo;s Guide</div><div class="comm-fetch-note">(Pocket edition. Already open to page 42.)</div></div>
+      </div>
+    </div>
+
+    <div class="comm-copy reveal">
+      <p>The Constellation is the live audience of Late Night Space Flight. They show up in chat, they heckle the host about stellar classifications, they know Ripley by name, and they have opinions. Strong opinions. About astrophysics, about biscuits, about which episode was the best one.</p>
+      <p>Every member is a point of light. Community lore accumulates and is recorded at our home, the Pathamon system. Regulars are remembered. Newcomers are welcomed.</p>
+      <p><strong>It is not parasocial. It is genuinely communal. There is a difference.</strong></p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SECTION 5 — THE NUMBERS
+════════════════════════════════════════════════ -->
+<section id="stats" class="section" aria-labelledby="stats-title">
+  <div class="container">
+
+    <div class="reveal">
+      <div class="sec-label">The Stats</div>
+      <h2 class="sec-title" id="stats-title">By The Numbers</h2>
+      <p class="sec-sub">Audience data, engagement metrics, and community reach.</p>
+    </div>
+
+    <div class="reveal sec-body">
+      <p>Numbers don't tell the whole story, but they tell part of it. Here's what Late Night Space Flight looks like by the metrics—average viewers, total watch time, community growth, and engagement rates. Updated each season.</p>
+    </div>
+
+    <div class="stat-hero reveal">
+      <div class="stat-card stat-card--lg">
+        <span class="stat-num">94</span>
+        <span class="stat-lbl">Avg. Concurrent Viewers</span>
+        <div class="stat-note">ACV &mdash; the gold standard</div>
+      </div>
+      <div class="stat-card stat-card--lg">
+        <span class="stat-num">2,262</span>
+        <span class="stat-lbl">Peak Concurrent Viewers</span>
+        <div class="stat-note">All-time high</div>
+      </div>
+      <div class="stat-card stat-card--lg">
+        <span class="stat-num">84%</span>
+        <span class="stat-lbl">Sub-to-Viewer Ratio</span>
+        <div class="stat-note">Audience quality indicator</div>
+      </div>
+      <div class="stat-card stat-card--lg">
+        <span class="stat-num">204 min</span>
+        <span class="stat-lbl">Avg. Session Watch Time</span>
+        <div class="stat-note">Per stream, per viewer</div>
+      </div>
+    </div>
+
+    <div class="stat-panels reveal">
+      <div class="stat-panel">
+        <div class="stat-panel-title">Engagement &amp; Loyalty</div>
+        <div class="stat-row"><span class="stat-row-lbl">Followers</span><span class="stat-row-val">5,078</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Subscribers</span><span class="stat-row-val">260</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Avg. Chat Messages / Stream</span><span class="stat-row-val">14,504</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Clip &amp; Highlight Views</span><span class="stat-row-val">1,363</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Unique Viewers / Month</span><span class="stat-row-val">4,036</span></div>
+      </div>
+      <div class="stat-panel">
+        <div class="stat-panel-title">Consistency</div>
+        <div class="stat-row"><span class="stat-row-lbl">Streams per Month</span><span class="stat-row-val">14</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Hours Broadcast / Month</span><span class="stat-row-val">37</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">90-Day ACV Trend</span><span class="stat-row-val">Available on request</span></div>
+      </div>
+    </div>
+
+    <div class="stat-section-title reveal">Community Reach Beyond Twitch</div>
+    <div class="stat-reach reveal">
+      <div class="stat-card stat-card--sm"><span class="stat-num">328</span><span class="stat-lbl">Discord Members</span></div>
+      <div class="stat-card stat-card--sm"><span class="stat-num">&mdash;</span><span class="stat-lbl">YouTube Clip Views</span></div>
+      <div class="stat-card stat-card--sm"><span class="stat-num">&mdash;</span><span class="stat-lbl">TikTok Clip Views</span></div>
+      <div class="stat-card stat-card--sm"><span class="stat-num">1,495</span><span class="stat-lbl">Twitter / X Followers</span></div>
+    </div>
+
+    <div class="stat-demo reveal">
+      <div class="stat-panel">
+        <div class="stat-panel-title">Demographics</div>
+        <div class="stat-row"><span class="stat-row-lbl">Primary Age Range</span><span class="stat-row-val">&mdash;</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Gender Split</span><span class="stat-row-val">&mdash; / &mdash;</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Top Markets</span><span class="stat-row-val">&mdash;</span></div>
+        <div class="stat-row"><span class="stat-row-lbl">Platforms</span><span class="stat-row-val">Twitch (primary) &nbsp;|&nbsp; YouTube (VODs)</span></div>
+      </div>
+      <div class="stat-panel">
+        <div class="stat-panel-title">Past Campaign Performance</div>
+        <p class="stat-campaign-note">Prior campaign performance data (CTR, promo redemptions, conversion metrics) available on request.</p>
+      </div>
+    </div>
+
+    <p class="stat-caveat reveal">Metrics reflect legacy data (pre-hiatus). 2026 season data will be updated as flights launch.</p>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="fb">
+        <div class="fb-row">
+          <img src="assets/LNSF_Avatar.png" alt="MalForTheWin" class="fb-logo">
+          <div>
+            <div class="fb-title">Late Night Space Flight</div>
+            <div class="fb-with"><span class="fb-with-normal">With </span><span class="fb-with-bold">MalForTheWin</span></div>
+          </div>
+        </div>
+        <p class="fb-tag">Live space science. Late night format. Virtual galaxy.</p>
+      </div>
+      <nav class="fn" aria-label="Footer navigation">
+        <div class="fn-lbl">Navigation</div>
+        <a href="#show">Show</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#community">Community</a>
+        <a href="#stats">Stats</a>
+      </nav>
+      <div class="fs">
+        <div class="fs-lbl">Find Us</div>
+        <a href="https://twitch.tv/malforthewin" target="_blank" rel="noopener noreferrer" class="soc">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+          twitch.tv/malforthewin
+        </a>
+        <a href="https://youtube.com/@malforthewin" target="_blank" rel="noopener noreferrer" class="soc">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          youtube.com/@malforthewin
+        </a>
+        <a href="https://twitter.com/malforthewin" target="_blank" rel="noopener noreferrer" class="soc">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @malforthewin
+        </a>
+      </div>
+    </div>
+    <div class="footer-btm">
+      <span>&copy; 2026 MalForTheWin. All rights reserved. Not affiliated with Frontier Developments.</span>
+      <span>Late Night Space Flight with MalForTheWin</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
